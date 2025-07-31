@@ -1,0 +1,62 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #c2f0f7, #e1eaff);
+  margin: 0;
+  padding: 0;
+}
+
+.karya-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.karya-section h1 {
+  font-size: 36px;
+  color: #6b1e8a;
+  margin-bottom: 40px;
+}
+
+.karya-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+ justify-content: center; 
+}
+
+.karya-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.karya-card:hover {
+  transform: scale(1.05);
+}
+
+.karya-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.karya-card h3 {
+  color: #8436b6;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.karya-card p {
+  color: #555;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.karya{
+    font-size: medium;
+    color: #F564A9;
+}

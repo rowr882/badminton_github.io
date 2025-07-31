@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karya Anak</title>
+  <link rel="stylesheet" href="karya.css" />
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="kontak.css" />
+   <script type="text/javascript">
+        function validasiEmail(event) {
+            event.preventDefault(); // Mencegah form dikirim otomatis
+
+            let email = document.getElementById("email").value.trim();
+
+            if (email === "") {
+                alert("Email tidak boleh kosong!");
+                return;
+            }
+
+            let regex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+            if (!regex.test(email)) {
+                alert("Format email tidak valid!");
+                return;
+            }
+
+            let yakin = confirm("Apakah kamu yakin form sudah benar?");
+            if (yakin) {
+                alert("Form berhasil dikirim!");
+                window.location.href = "beranda.html"; // Arahkan ke index.html
+            } else {
+                alert("Silakan periksa kembali email kamu.");
+            }
+        }
+    </script>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="logo-img">
+        <img src="logo anak.png" alt="">
+    </div>
+    <ul class="nav-links">
+      <li><a href="beranda.html">🏠 Beranda</a></li>
+      <li><a href="karya.html">🎨 Karya</a></li>
+      <li><a href="kontak.html">📬 Kontak</a></li>
+    </ul>
+  </nav>
+  
+    <section class="karya-section">
+    <h1>🎨 Karya Anak</h1>
+
+    <h2>Kalau anda ingin bergabung bersama kami anda boleh mengisi formulir terlebih dahulu!</h2>
+    <div class="contact-form">
+                    <h3>Isi disini ya!</h3>
+                    <form id="formPendaftaran" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">No hp</label>
+                            <input type="tel" name="telepon">
+                        </div>
+                        <div class="form-group">
+                          <label>umur</label>
+                          <input type="number" min="7" max="15" name="umur">
+                        </div>
+                        <div class="form-group">
+                          <label>upload file</label>
+                          <input type="file">
+                        </div>
+                        <button type="submit" class="submit-btn" onclick="validasiEmail(event)">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+
+</body>
+</html>
