@@ -1,0 +1,70 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #FFE5CC;
+  padding: 30px;
+  color: #5a2b0c;
+}
+
+/* JUDUL */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff7c10;
+  font-size: 28px;
+}
+
+/* TOMBOL KEMBALI */
+.back {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 10px 18px;
+  background: white;
+  color: #ff7c10;
+  border-radius: 25px;
+  border: 2px solid #ff7c10;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back:hover {
+  background: #ff7c10;
+  color: white;
+}
+
+/* TABEL */
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+th {
+  background: #ff7c10;
+  color: white;
+  padding: 14px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background: #FFE5CC;
+}
+
+/* GAMBAR */
+img {
+  border-radius: 10px;
+}

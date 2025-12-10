@@ -1,0 +1,116 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFE5CC;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    color: #5a2b0c;
+}
+
+/* JUDUL */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #E06A2F;
+}
+
+/* TOMBOL */
+a, button {
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* Tombol tambah */
+a[href*="tambah"] {
+    background: #ff7c10;
+    color: white;
+}
+
+/* Tombol home */
+.btn-home, a[href*="index"] {
+    background: white;
+    color: #ff7c10;
+    border: 2px solid #ff7c10;
+}
+
+/* Tombol edit */
+a[href*="edit"] {
+    background: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+/* Tombol hapus */
+a[href*="hapus"] {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+/* FORM */
+form {
+    background: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+form button {
+    background: #ff7c10;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    background: white;
+    margin-top: 25px;
+    border-radius: 14px;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+th {
+    background: #ff7c10;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+/* HOVER */
+tr:hover {
+    background: #FFE5CC;
+}
+
+a:hover, button:hover {
+    opacity: 0.85;
+}
